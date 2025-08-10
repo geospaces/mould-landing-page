@@ -10,35 +10,28 @@ const config: Config = {
     container: {
       center: true,
       padding: "0px",
-      screens: {
-        "2xl": "1440px"
-      }
+      screens: { "2xl": "1440px" }
     },
     extend: {
-      spacing: {
-        // map your 4/8pt scale here
-        // "1": "4px", "2": "8px", ...
-      },
       colors: {
-        // Figma tokens go here
-        // "brand": "var(--color-brand)",
-        // "bg": "var(--color-bg)",
-        // "fg": "var(--color-fg)",
+        brand: "var(--color-brand)",
+        accent: "var(--color-accent)",
+        bg: "var(--color-bg)",
+        fg: "var(--color-fg)",
+        muted: "var(--color-muted)",
+        subtle: "var(--color-subtle)",
+        border: "var(--color-border)",
       },
       borderRadius: {
-        // "lg": "var(--radius-lg)"
+        md: "var(--radius-md)",
+        lg: "var(--radius-lg)"
       },
       boxShadow: {
-        // "elevation-1": "var(--shadow-1)"
+        sm: "var(--shadow-1)",
+        xl: "var(--shadow-2)"
       },
       fontFamily: {
-        // "sans": ["var(--font-sans)", "system-ui", "sans-serif"]
-      },
-      letterSpacing: {
-        // "tight-1": "-0.01em"
-      },
-      lineHeight: {
-        // "body": "var(--lh-body)"
+        sans: ["var(--font-sans)"]
       }
     },
   },
